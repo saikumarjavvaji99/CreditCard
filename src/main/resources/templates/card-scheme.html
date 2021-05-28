@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Credit Session</title>
+</head>
+<body>
+    <div>
+
+        <center>
+        <h1>CREDIT</h1> <br><br><br>
+        <section style="color:gainsboro;">
+        <form action="save" method="post">
+            <input type="text" name="creditId"> <button style="color: black">submit</button><br>
+            <label>Enter the first digits of a card number (BIN/IIN)</label>
+        </form>
+            <br><br><br>
+            <div style="padding-left: 300px;">
+            <div style="display: flex">Brand: &nbsp;&nbsp;&nbsp;<div style="color: black";>  <span th:text="${credit.brand}"></span></div> </div><br>
+            <div style="display: flex">Scheme: &nbsp;&nbsp;&nbsp;<div style="color: black"><span th:text="${credit.scheme}"></span></div></div><br>
+                <div style="display: flex">type:&nbsp;&nbsp;&nbsp; <div style="color: black"><span th:text="${credit.type}"></span></div></div><br>
+                    <div style="display: flex">prepaid: &nbsp;&nbsp;&nbsp;<div style="color: black"><span th:text="${credit.prepaid}"></span></div></div><br>
+                        <div style="display: flex">Bank Name:&nbsp;&nbsp;&nbsp; <div style="color: black"><span th:text="${credit.bank.name}"></span></div></div><br>
+            </div>
+
+        </section></center>
+</div>
+</body>
+</html>
